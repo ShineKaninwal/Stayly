@@ -7,8 +7,4 @@ python-dotenv>=1.0
 gunicorn>=21.2
 psycopg[binary]
 Flask-Limiter
-<<<<<<< HEAD
 email-validator
-=======
-email-validator
->>>>>>> d204420fa7b48f261c364e7ba2ce32767685155f
