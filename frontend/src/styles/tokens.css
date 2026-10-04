@@ -1,0 +1,22 @@
+:root {
+  /* colour */
+  --c-brand: #ff385c; --c-brand-dark: #e00b41; --c-text: #222222; --c-muted: #6a6a6a;
+  --c-border: #dddddd; --c-border-light: #ebebeb; --c-bg: #ffffff; --c-surface: #f7f7f7;
+  --c-error: #c13515; --c-error-bg: #fff3f0; --c-success: #008a05;
+  /* type */
+  --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  --fs-xs: 12px; --fs-sm: 14px; --fs-md: 16px; --fs-lg: 22px; --fs-xl: 26px; --fs-2xl: 32px;
+  /* spacing */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 64px;
+  /* radius */
+  --r-sm: 8px; --r-md: 12px; --r-lg: 20px; --r-pill: 999px;
+  /* shadow */
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-2: 0 2px 16px rgba(0, 0, 0, 0.12);
+  --shadow-3: 0 8px 28px rgba(0, 0, 0, 0.18);
+  /* layout */
+  --container: 1760px; --pad-x: 80px; --nav-h: 80px;
+  --t: 0.2s cubic-bezier(0.2, 0, 0, 1);
+}
+@media (max-width: 1127px) { :root { --pad-x: 40px; } }
+@media (max-width: 743px) { :root { --pad-x: 24px; --nav-h: 76px; } }

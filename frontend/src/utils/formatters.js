@@ -1,0 +1,13 @@
+const inr = new Intl.NumberFormat("en-IN");
+export const formatPrice = (n) => `₹${inr.format(n)}`;
+export const formatRating = (n) => Number(n).toFixed(1);
+const short = new Intl.DateTimeFormat("en-IN", { day: "numeric", month: "short" });
+const long = new Intl.DateTimeFormat("en-IN", { day: "numeric", month: "short", year: "numeric" });
+const parse = (iso) => new Date(`${iso.slice(0, 10)}T00:00:00`);
+export const formatShortDate = (iso) => short.format(parse(iso));
+export const formatLongDate = (iso) => long.format(parse(iso));
+export const formatDateTime = (iso) => long.format(new Date(iso));
+export const nightsBetween = (a, b) => (a && b ? Math.round((parse(b) - parse(a)) / 86400000) : 0);
+export const todayISO = () => new Date().toLocaleDateString("en-CA");
+export const initials = (name = "") => name.trim().split(/\s+/).slice(0, 2).map((p) => p[0]?.toUpperCase()).join("");
+export const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
